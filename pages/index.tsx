@@ -6,7 +6,120 @@ import logo from '../public/logo.png'
 import teaser from '../public/teaser.png'
 import happyGoat from '../public/happy-goat.gif'
 
-const data = {}
+const data = {
+  teams: [
+    {
+      name: 'Team A',
+      color: '',
+      points: 0,
+      members: [
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        }
+      ]
+    },
+    {
+      name: 'Team B',
+      color: '',
+      points: 0,
+      members: [
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        }
+      ]
+    },
+    {
+      name: 'Team C',
+      color: '',
+      points: 0,
+      members: [
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        }
+      ]
+    },
+    {
+      name: 'Team D',
+      color: '',
+      points: 0,
+      members: [
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        }
+      ]
+    },
+    {
+      name: 'Team E',
+      color: '',
+      points: 0,
+      members: [
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        },
+        {
+          url: 'https://firebasestorage.googleapis.com/v0/b/spacemas-2021.appspot.com/o/team%2Fgeorge.png?alt=media&token=266b0d17-9b67-46e0-84a0-1098444bd0f5'
+        }
+      ]
+    }
+  ]
+}
 
 const Home: NextPage = () => {
   return (
@@ -27,9 +140,9 @@ const Home: NextPage = () => {
         <h1 className='mx-auto text-4xl font-bold text-transparent w-fit bg-clip-text bg-gradient-to-r from-pink-600 to-indigo-600 sm:text-6xl'>
           SPACEMAS 2021
         </h1>
-        <h3 className='mx-auto text-xl text-gray-200 w-fit sm:text-3xl'>
+        <div className='mx-auto text-xl text-gray-200 w-fit sm:text-3xl'>
           17.12.2021
-        </h3>
+        </div>
       </header>
 
       <main className='space-y-12 sm:space-y-24'>
