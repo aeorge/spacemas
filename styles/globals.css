@@ -42,3 +42,23 @@ a {
 * {
   box-sizing: border-box;
 }
+
+progress {
+  border-radius: 9999px;
+  background-color: #ffffff10;
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 9999px;
+  background-color: #ffffff10;
+}
+
+progress::-webkit-progress-value {
+  border-radius: 9999px;
+  background-color: #f472b6;
+}
+
+progress::-moz-progress-bar {
+  border-radius: 9999px;
+  background-color: #f472b6;
+}
