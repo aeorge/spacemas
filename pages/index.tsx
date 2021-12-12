@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 import logo from '../public/logo.png'
 import teaser from '../public/teaser.png'
+import happyGoat from '../public/happy-goat.gif'
 
 const data = {}
 
@@ -166,6 +167,17 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
+
+      <hr className='border-2 border-gray-600 rounded-full' />
+
+      <footer className='space-y-2 sm:space-y-4'>
+        <h2 className='w-full mx-auto text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-indigo-600 lg:w-2/3 lg:text-5xl lg:leading-[3.75rem]'>
+          SPACEGOATS wishes you a wonderful holiday season and a happy New Year!
+        </h2>
+        <div>
+          <Image src={happyGoat} alt='Happy goat dancing' />
+        </div>
+      </footer>
     </div>
   )
 }
