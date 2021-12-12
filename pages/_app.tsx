@@ -4,10 +4,10 @@ import Snowfall from 'react-snowfall'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <Snowfall style={{ zIndex: 9999 }} />
+    <div suppressHydrationWarning={true}>
+      {process.browser && <Snowfall style={{ zIndex: 9999 }} />}
       <Component {...pageProps} />
-    </>
+    </div>
   )
 }
 
