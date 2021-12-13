@@ -136,7 +136,9 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      {mounted ? <Snowfall style={{ zIndex: 9999 }} /> : null}
+      {mounted ? (
+        <Snowfall snowflakeCount={250} style={{ zIndex: 9999 }} />
+      ) : null}
 
       <header className='space-y-2 sm:space-y-4'>
         <Image
