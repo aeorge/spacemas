@@ -17,7 +17,7 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head />
-        <body className='relative text-white bg-primary font-montserrat'>
+        <body className='relative text-white bg-gradient-to-br from-primary-darker via-primary-lighter to-primary-darker font-montserrat'>
           <Main />
           <NextScript />
         </body>
