@@ -207,17 +207,21 @@ const Home: NextPage = () => {
                   <ul className='flex flex-wrap justify-center gap-2 sm:gap-4'>
                     {team.members?.map((member, index) => (
                       <li
-                        className={`overflow-hidden border-4 rounded-full w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] ${
+                        className={`flex items-center justify-center overflow-hidden border-4 rounded-full w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] ${
                           borderColor[team.color]
                         } ${backgroundColor[team.color]}`}
                         key={index}
                       >
-                        <Image
-                          src={member.url}
-                          alt={`Team Member ${index + 1}`}
-                          width={150}
-                          height={150}
-                        />
+                        {member.url ? (
+                          <Image
+                            src={member.url}
+                            alt={`Team Member ${index + 1}`}
+                            width={150}
+                            height={150}
+                          />
+                        ) : (
+                          <span className='text-4xl sm:text-6xl'>?</span>
+                        )}
                       </li>
                     ))}
                   </ul>
