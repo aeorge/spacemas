@@ -239,7 +239,11 @@ const Home: NextPage = () => {
                 .sort((a, b) => b.points - a.points)
                 .map((team, index) => (
                   <li className='space-y-2 sm:space-y-4' key={index}>
-                    <div className='flex space-x-2 text-xl sm:text-3xl'>
+                    <div
+                      className={`flex space-x-2 text-xl sm:text-3xl ${
+                        textColor[team.color]
+                      }`}
+                    >
                       <span>{team.name}</span>
                       <span>({team.points})</span>
                     </div>
