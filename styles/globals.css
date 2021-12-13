@@ -55,10 +55,10 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
   border-radius: 9999px;
-  background-color: #f472b6;
+  background-color: #ffffff;
 }
 
 progress::-moz-progress-bar {
   border-radius: 9999px;
-  background-color: #f472b6;
+  background-color: #ffffff;
 }
