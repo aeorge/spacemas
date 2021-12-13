@@ -8,6 +8,7 @@ import { backgroundColor, borderColor, textColor } from '../utils/colors'
 
 import logo from '../public/logo.png'
 import teaser from '../public/teaser.png'
+import coinSpin from '../public/coin-spin.gif'
 import happyGoat from '../public/happy-goat.gif'
 
 const data = {
@@ -267,9 +268,13 @@ const Home: NextPage = () => {
         </section>
 
         <section className='space-y-4 sm:space-y-8'>
-          <h2 className='text-2xl font-bold text-yellow-400 uppercase sm:text-4xl'>
-            Sponsors
-          </h2>
+          <div className='flex items-center justify-center'>
+            <Image src={coinSpin} alt='Spinning coin' width={40} height={40} />
+            <h2 className='text-2xl font-bold text-yellow-400 uppercase sm:text-4xl'>
+              Sponsors
+            </h2>
+            <Image src={coinSpin} alt='Spinning coin' width={40} height={40} />
+          </div>
           <ul className='space-y-8'>
             <li className='space-y-1 sm:space-y-2'>
               <div className='text-xl font-bold sm:text-3xl'>Yuyuicery</div>
