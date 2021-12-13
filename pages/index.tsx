@@ -198,7 +198,9 @@ const Home: NextPage = () => {
               {data?.teams?.map((team, index) => (
                 <li className='space-y-2 sm:space-y-4' key={index}>
                   <h3
-                    className={`text-xl sm:text-3xl ${textColor[team.color]}`}
+                    className={`text-xl font-bold sm:text-3xl ${
+                      textColor[team.color]
+                    }`}
                   >
                     {team.name}
                   </h3>
@@ -240,7 +242,7 @@ const Home: NextPage = () => {
                 .map((team, index) => (
                   <li className='space-y-2 sm:space-y-4' key={index}>
                     <div
-                      className={`flex space-x-2 text-xl sm:text-3xl ${
+                      className={`flex space-x-2 text-xl font-bold sm:text-3xl ${
                         textColor[team.color]
                       }`}
                     >
