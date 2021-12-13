@@ -3,6 +3,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Snowfall from 'react-snowfall'
+import { TeamColor } from '../types'
+import { backgroundColor, borderColor, textColor } from '../utils/colors'
 
 import logo from '../public/logo.png'
 import teaser from '../public/teaser.png'
@@ -12,7 +14,7 @@ const data = {
   teams: [
     {
       name: 'Team A',
-      color: '',
+      color: TeamColor.RED,
       points: 0,
       members: [
         {
@@ -34,7 +36,7 @@ const data = {
     },
     {
       name: 'Team B',
-      color: '',
+      color: TeamColor.BLUE,
       points: 0,
       members: [
         {
@@ -56,7 +58,7 @@ const data = {
     },
     {
       name: 'Team C',
-      color: '',
+      color: TeamColor.GREEN,
       points: 0,
       members: [
         {
@@ -78,7 +80,7 @@ const data = {
     },
     {
       name: 'Team D',
-      color: '',
+      color: TeamColor.YELLOW,
       points: 0,
       members: [
         {
@@ -100,7 +102,7 @@ const data = {
     },
     {
       name: 'Team E',
-      color: '',
+      color: TeamColor.PURPLE,
       points: 0,
       members: [
         {
@@ -195,12 +197,17 @@ const Home: NextPage = () => {
             <ul className='space-y-8'>
               {data?.teams?.map((team, index) => (
                 <li className='space-y-2 sm:space-y-4' key={index}>
-                  <h3 className='text-xl sm:text-3xl'>{team.name}</h3>
+                  <h3
+                    className={`text-xl sm:text-3xl ${textColor[team.color]}`}
+                  >
+                    {team.name}
+                  </h3>
                   <ul className='flex flex-wrap justify-center gap-2 sm:gap-4'>
                     {team.members?.map((member, index) => (
                       <li
-                        // TODO Fix dynamic border and background color
-                        className='overflow-hidden border-2 rounded-full w-[100px] h-[100px] sm:w-[150px] sm:h-[150px]'
+                        className={`overflow-hidden border-4 rounded-full w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] ${
+                          borderColor[team.color]
+                        } ${backgroundColor[team.color]}`}
                         key={index}
                       >
                         <Image
