@@ -123,7 +123,7 @@ const data = {
 
 const Home: NextPage = () => {
   return (
-    <div className='container px-2 mx-auto my-12 space-y-12 text-center sm:px-4 sm:my-24 sm:space-y-24'>
+    <div className='container px-2 py-12 mx-auto space-y-12 text-center sm:px-4 sm:py-24 sm:space-y-24'>
       <Head>
         <title>SPACEMAS 2021</title>
         <meta name='description' content='SPACEMAS 2021' />
