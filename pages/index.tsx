@@ -1,6 +1,8 @@
+import { useEffect, useState } from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Snowfall from 'react-snowfall'
 
 import logo from '../public/logo.png'
 import teaser from '../public/teaser.png'
@@ -122,6 +124,10 @@ const data = {
 }
 
 const Home: NextPage = () => {
+  const [mounted, setMounted] = useState<boolean>(false)
+
+  useEffect(() => setMounted(true), [])
+
   return (
     <div className='container px-2 py-12 mx-auto space-y-12 text-center sm:px-4 sm:py-24 sm:space-y-24'>
       <Head>
@@ -129,6 +135,8 @@ const Home: NextPage = () => {
         <meta name='description' content='SPACEMAS 2021' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+
+      {mounted ? <Snowfall style={{ zIndex: 9999 }} /> : null}
 
       <header className='space-y-2 sm:space-y-4'>
         <Image
