@@ -8,7 +8,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { google } from 'googleapis'
 import Snowfall from 'react-snowfall'
-import { Team } from '../types'
+import { Team, TeamColor } from '../types'
 import { backgroundColor, borderColor, textColor } from '../utils/colors'
 
 import logo from '../public/logo.png'
@@ -19,13 +19,30 @@ import happyGoat from '../public/happy-goat.gif'
 const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
   ({ teams }) => {
     const [mounted, setMounted] = useState<boolean>(false)
+    const [snowColor, setSnowColor] = useState<TeamColor | 'white'>('white')
 
-    useEffect(() => setMounted(true), [])
+    useEffect(() => {
+      setMounted(true)
+    }, [])
+
+    useEffect(() => {
+      const maxPoints = Math.max(...teams.map((team) => team.points))
+      const leadingTeams = teams.filter((team) => team.points === maxPoints)
+      if (leadingTeams.length === 1) {
+        setSnowColor(leadingTeams[0].color)
+      } else {
+        setSnowColor('white')
+      }
+    }, [teams])
 
     return (
       <>
         {mounted ? (
-          <Snowfall snowflakeCount={250} style={{ zIndex: 9999 }} />
+          <Snowfall
+            color={snowColor}
+            snowflakeCount={250}
+            style={{ zIndex: 9999 }}
+          />
         ) : null}
         <div className='container px-2 py-12 mx-auto space-y-12 text-center sm:px-4 sm:py-24 sm:space-y-24'>
           <Head>
