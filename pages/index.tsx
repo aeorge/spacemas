@@ -11,7 +11,7 @@ import Snowfall from 'react-snowfall'
 import { Team, TeamColor } from '../types'
 import { backgroundColor, borderColor, textColor } from '../utils/colors'
 
-import logo from '../public/logo.png'
+import santaGoat from '../public/santa-goat.png'
 import teaser from '../public/teaser.png'
 import coinSpin from '../public/coin-spin.gif'
 import happyGoat from '../public/happy-goat.gif'
@@ -53,7 +53,7 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
 
           <header className='space-y-2 sm:space-y-4'>
             <Image
-              src={logo}
+              src={santaGoat}
               alt='SPACEGOATS Logo'
               width={150}
               height={128}
