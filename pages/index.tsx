@@ -194,9 +194,9 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
                 <h2 className='text-2xl font-bold uppercase sm:text-4xl'>
                   Live Bets
                 </h2>
-                <p className='text-base text-gray-400 sm:text-xl'>
+                <div className='text-base text-gray-400 sm:text-xl'>
                   by Krebbet™
-                </p>
+                </div>
               </div>
               <div>
                 <Image
@@ -235,7 +235,7 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
               <ul className='space-y-8'>
                 <li className='space-y-1 sm:space-y-2'>
                   <div className='text-xl font-bold sm:text-3xl'>Yuyuicery</div>
-                  <div className='text-lg italic text-gray-200 sm:text-2xl'>
+                  <div className='text-base italic text-gray-200 sm:text-xl'>
                     Your #1 SPACEGOATS food supplier
                   </div>
                 </li>
@@ -243,13 +243,13 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
                   <div className='text-xl font-bold sm:text-3xl'>
                     Dolce Mari
                   </div>
-                  <div className='text-lg italic text-gray-200 sm:text-2xl'>
+                  <div className='text-base italic text-gray-200 sm:text-xl'>
                     Where everything is ready for remission
                   </div>
                 </li>
                 <li className='space-y-1 sm:space-y-2'>
                   <div className='text-xl font-bold sm:text-3xl'>Krebbet™</div>
-                  <div className='text-lg italic text-gray-200 sm:text-2xl'>
+                  <div className='text-base italic text-gray-200 sm:text-xl'>
                     Win and get limited
                   </div>
                 </li>
@@ -257,7 +257,7 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
                   <div className='text-xl font-bold sm:text-3xl'>
                     AMZ*ucklete
                   </div>
-                  <div className='text-lg italic text-gray-200 sm:text-2xl'>
+                  <div className='text-base italic text-gray-200 sm:text-xl'>
                     Start here, end at SPACEGOATS
                   </div>
                 </li>
