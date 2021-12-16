@@ -13,6 +13,7 @@ import { backgroundColor, borderColor, textColor } from '../utils/colors'
 
 import santaGoat from '../public/santa-goat.png'
 import teaser from '../public/teaser.png'
+import closedSign from '../public/closed-sign.png'
 import coinSpin from '../public/coin-spin.gif'
 import happyGoat from '../public/happy-goat.gif'
 
@@ -162,14 +163,14 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
                     .sort((a, b) => b.points - a.points)
                     .map((team, index) => (
                       <li className='space-y-2 sm:space-y-4' key={index}>
-                        <div
+                        <h3
                           className={`flex space-x-2 text-xl font-bold sm:text-3xl ${
                             textColor[team.color]
                           }`}
                         >
                           <span>{team.name}</span>
                           <span>({team.points})</span>
-                        </div>
+                        </h3>
                         <progress
                           className='w-full'
                           max={20}
@@ -185,6 +186,29 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
                   The games did not start yet.
                 </p>
               )}
+            </section>
+
+            <section className='space-y-4 sm:space-y-8'>
+              <div>
+                <h2 className='text-2xl font-bold uppercase sm:text-4xl'>
+                  Live Bets
+                </h2>
+                <p className='text-base text-gray-400 sm:text-xl'>by Krebbet</p>
+              </div>
+              <div>
+                <Image
+                  src={closedSign}
+                  alt='Closed sign'
+                  width={138}
+                  height={80}
+                  placeholder='blur'
+                />
+              </div>
+              <p className='text-lg sm:text-2xl'>
+                Due to a case of illness in the team,
+                <br />
+                the casino must unfortunately remain closed today.
+              </p>
             </section>
 
             <section className='space-y-4 sm:space-y-8'>
