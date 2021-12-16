@@ -49,6 +49,7 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
           <Head>
             <title>SPACEMAS 2021</title>
             <meta name='description' content='SPACEMAS 2021' />
+            <meta name='theme-color' content='#111839' />
             <link rel='icon' href='/favicon/favicon.ico' />
           </Head>
 
