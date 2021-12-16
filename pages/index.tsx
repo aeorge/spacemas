@@ -48,7 +48,7 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
           <Head>
             <title>SPACEMAS 2021</title>
             <meta name='description' content='SPACEMAS 2021' />
-            <link rel='icon' href='/favicon.ico' />
+            <link rel='icon' href='/favicon/favicon.ico' />
           </Head>
 
           <header className='space-y-2 sm:space-y-4'>
