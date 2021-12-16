@@ -69,10 +69,9 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
 
           <main className='space-y-12 sm:space-y-24'>
             <div className='space-y-4 sm:space-y-8'>
-              {/* TODO Replace text */}
-              <p className='text-lg sm:text-2xl'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
-                sunt?
+              <p className='mx-auto text-lg sm:w-2/3 sm:text-2xl'>
+                It is time for the annual remote Christmas party! Let us enjoy
+                the evening and have a great time together!
               </p>
               <div className='inline-flex overflow-hidden border-2 border-pink-400 shadow-2xl shadow-pink-400/75 rounded-2xl sm:border-4'>
                 <Image
@@ -83,8 +82,12 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
                   placeholder='blur'
                 />
               </div>
-              {/* TODO Replace text */}
-              <p className='text-lg sm:text-2xl'>Lorem ipsum dolor sit amet.</p>
+              <p className='mx-auto text-lg sm:w-2/3 sm:text-2xl'>
+                Ruben Astorpflaume & Benjamin Gottschabend present to you:{' '}
+                <span className='font-bold text-yellow-400 whitespace-nowrap'>
+                  ✨ SPACEMAS 2021! ✨
+                </span>
+              </p>
             </div>
 
             <section className='space-y-4 sm:space-y-8'>
