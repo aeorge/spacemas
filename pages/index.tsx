@@ -96,16 +96,20 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
               <h2 className='text-2xl font-bold uppercase sm:text-4xl'>
                 Agenda
               </h2>
-              {/* TODO Replace text */}
-              <p className='text-base sm:text-xl'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                officiis, nulla ducimus velit accusamus quidem dolores
-                dignissimos harum, perferendis assumenda quos corporis explicabo
-                ut dicta tempore aut mollitia sapiente suscipit. Nesciunt, aut
-                quis veritatis aliquid voluptatum velit natus tempore unde.
-                Similique deleniti perspiciatis possimus officiis reprehenderit
-                saepe eveniet veniam labore?
-              </p>
+              <ul className='text-base leading-8 sm:text-xl sm:leading-10'>
+                <li>- Opening Ceremony -</li>
+                <li>- Explanation of the games -</li>
+                <li>- Team Draw -</li>
+                <li>- Team Organization -</li>
+                <li>- First Game -</li>
+                <li>- Food Break -</li>
+                <li>- Speech by the CEO -</li>
+                <li>- Second Game -</li>
+                <li>- Gartic Phone -</li>
+                <li>- Break -</li>
+                <li>- Final Game -</li>
+                <li>- Chill lounge (open end) -</li>
+              </ul>
             </section>
 
             <section className='space-y-4 sm:space-y-8'>
