@@ -193,7 +193,9 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
                 <h2 className='text-2xl font-bold uppercase sm:text-4xl'>
                   Live Bets
                 </h2>
-                <p className='text-base text-gray-400 sm:text-xl'>by Krebbet</p>
+                <p className='text-base text-gray-400 sm:text-xl'>
+                  by Krebbet™
+                </p>
               </div>
               <div>
                 <Image
@@ -245,7 +247,7 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
                   </div>
                 </li>
                 <li className='space-y-1 sm:space-y-2'>
-                  <div className='text-xl font-bold sm:text-3xl'>Krebbet</div>
+                  <div className='text-xl font-bold sm:text-3xl'>Krebbet™</div>
                   <div className='text-lg italic text-gray-200 sm:text-2xl'>
                     Win and get limited
                   </div>
