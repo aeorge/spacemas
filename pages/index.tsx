@@ -13,6 +13,7 @@ import { backgroundColor, borderColor, textColor } from '../utils/colors'
 
 import santaGoat from '../public/santa-goat.png'
 import teaser from '../public/teaser.png'
+import spatial from '../public/spatial.png'
 import closedSign from '../public/closed-sign.png'
 import coinSpin from '../public/coin-spin.gif'
 import happyGoat from '../public/happy-goat.gif'
@@ -91,6 +92,31 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
                 </span>
               </p>
             </div>
+
+            <section className='space-y-4 sm:space-y-8'>
+              <h2 className='text-2xl font-bold uppercase sm:text-4xl'>
+                Spatial Chat
+              </h2>
+              <div className='space-y-2 sm:space-y-4'>
+                <p className='text-lg sm:text-2xl'>
+                  Come join us in Spatial Chat!
+                </p>
+                <a
+                  href='https://spatial.chat/s/spacemas'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='inline-flex overflow-hidden border-2 border-indigo-400 shadow-2xl shadow-indigo-400/75 rounded-2xl sm:border-4'
+                >
+                  <Image
+                    src={spatial}
+                    alt='Spatial Chat Link'
+                    width={500}
+                    height={282}
+                    placeholder='blur'
+                  />
+                </a>
+              </div>
+            </section>
 
             <section className='space-y-4 sm:space-y-8'>
               <h2 className='text-2xl font-bold uppercase sm:text-4xl'>
