@@ -204,7 +204,7 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> =
                         </h3>
                         <progress
                           className='w-full'
-                          max={20}
+                          max={45}
                           value={team.points}
                         >
                           {team.points}
